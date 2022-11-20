@@ -1,0 +1,25 @@
+* {
+  margin: 0 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  @extend %font-prim;
+  background-color: $color-footer;
+}
+
+h1 {
+  @include font($height: 5.8rem, $size: 4.8rem);
+  color:  $color-text_dark;
+  @include media-mobile {
+    //@include font($height: 3.0rem, $size: 1.6rem);
+  }
+}
+
+h2 {
+  @include font($height: 2.4rem, $size: 2rem);
+  color: $color-text_dark;
+}

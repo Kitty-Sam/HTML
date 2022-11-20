@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test | HTML</title>
+    <link rel="stylesheet" href="sass/index.css">
+    <style>
+        .add-file-block {
+            position: relative;
+        }
+
+        .fake-add-file {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+
+        .add-file {
+            position: relative;
+            text-align: right;
+            -moz-opacity:0 ;
+            filter:alpha(opacity: 0);
+            opacity: 0;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<section class="top">
+    <header class="header__top">
+        <div class="logo">
+            <span class="logo__name">LoremIpsum.Net</span>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="" title="Бизнес">Бизнес</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link" href="" title="О нас">О нас</a>
+                </li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link " href="" title="Цены">Цены</a></li>
+                <li class="header__menu-list-item"><a class="header__menu-list-link " href="" title="Оформить заказ">Оформить заказ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <h1 class="main__header">Lorem ipsum dolor sit amet consectetur adipiscing</h1>
+        <p class="main__content">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+        </p>
+            <ul>
+        <li><p>Totam rem aperiam eaque ipsa</p></li>
+        <li><p>Sit voluptatem accusantium doloremque laudantium</p></li>
+        <li><p>Sed ut perspiciatis, unde omnis iste natus error</p></li>
+           </ul>
+        <button>заказать</button>
+        <button>подробнее</button>
+    </div>
+</section>
+
+<section class="order">
+    <main>
+    <span class="order__header">Оформление заказа</span>
+    <span class="order__additional-info">Перед заполнением формы ознакомьтесь с нашей схемой работы!</span>
+    <div class="order__stage-list">
+        <div class="order__stage-list-item">
+            <div class="order__stage-list-item-background"></div>
+            <p class="order__stage-list-item-title">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="order__stage-list-item">
+            <div class="order__stage-list-item-background"></div>
+            <p class="order__stage-list-item-title">Сonsecteturadipiscing elit</p>
+        </div>
+        <div class="order__stage-list-item">
+            <div class="order__stage-list-item-background"></div>
+            <p class="order__stage-list-item-title">Sed do eiusmod tempor</p>
+        </div>
+        <div class="order__stage-list-item">
+            <div class="order__stage-list-item-background"></div>
+            <p class="order__stage-list-item-title">Esse cillum dolore eu fugiat</p>
+        </div>
+        <div class="order__stage-list-item">
+            <div class="order__stage-list-item-background"></div>
+            <p class="order__stage-list-item-title">Excepteur sint occaecat cupidatat non proident</p>
+        </div>
+    </div>
+
+    <div class="order__input_data_list">
+        <select>
+            <option>Sed ut perspiciatis</option>
+            <option>emo enim ipsam</option>
+            <option>Et harum quidem</option>
+            <option>Temporibus autem</option>
+            <option>Itaque earum rerum</option>
+        </select>
+        <input type="email" placeholder="Ваш e-mail" name="email"/>
+        <input type="text" placeholder="Ваше имя" name="name"/>
+        <input type="range"/>
+
+        <div class="add-file-block">
+            <input type="file" class="add-file" />
+            <div class="fake-add-file">
+                <input value="Прикрепить файл"/>
+            </div>
+        </div>
+
+        <button type="submit">Отправить</button>
+
+    </div>
+    </main>
+</section>
+<footer class="footer">
+    <p class="info">© 2018 «LoremIpsum.net» Все права защищены.</p>
+    <ul class="footer__payment-list">
+        <li class="footer__payment-list-item">Qiwi wallet</li>
+        <li class="footer__payment-list-item">Yandex Money</li>
+        <li class="footer__payment-list-item">Web Money</li>
+    </ul>
+    <ul class="footer__contacts-list">
+        <li class="footer__contacts-list-item"><a class="footer__contacts-list-link" href="" title="email">info@ipsum228.com</a></li>
+        <li class="footer__contacts-list-item"><a class="footer__contacts-list-link" href="" title="vk">Мы вконтакте</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
