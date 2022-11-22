@@ -401,7 +401,7 @@ ul {
   box-sizing: border-box;
 }
 
-.order__stage-list-item-title, .order__additional-info, .order__header, .main__content-list-item, .main__content, .main__header, .footer__contacts-list-link, .footer__payment-list-item, .header__menu-list, .button, body {
+.order__stage-list-item-title, .order__additional-info, .order__header, .main__content-list-item, .main__content, .main__header, .footer__contacts-list-link, .footer__payment-list-item, .header__menu-list, input[type=file], input[type=text], input[type=email], .select-list, .button, body {
   font-family: Lato, Verdana, sans-serif;
 }
 
@@ -491,6 +491,82 @@ h2 {
   padding: 18px 135px;
   margin-bottom: 150px;
   margin-left: 0;
+}
+
+input::placeholder {
+  color: #272733;
+}
+
+.select-list {
+  width: 370px;
+  background-color: #FFFFFF;
+  opacity: 0.85;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  padding: 12px 36px 12px 10px;
+}
+
+input[type=email] {
+  width: 370px;
+  background-color: #FFFFFF;
+  opacity: 0.85;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  padding: 12px 36px 12px 10px;
+}
+
+input[type=text] {
+  width: 370px;
+  background-color: #FFFFFF;
+  opacity: 0.85;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  padding: 12px 36px 12px 10px;
+}
+
+input[type=file] {
+  width: 370px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  position: relative;
+  text-align: right;
+  -moz-opacity: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+#file {
+  background-image: url("assets/file.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.add-file-block {
+  position: relative;
+}
+
+.fake-add-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .header__wrapper {
@@ -733,6 +809,9 @@ button:last-child {
 }
 
 .order__input_data_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   height: 150px;
   border: 2px solid red;
   margin-bottom: 56px;

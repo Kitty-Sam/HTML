@@ -56,6 +56,9 @@
 }
 
 .order__input_data_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   height: 150px;
   border: 2px solid red;
   margin-bottom: 56px;

@@ -7,25 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test | HTML</title>
     <link rel="stylesheet" href="sass/index.css">
-    <style>
-        .add-file-block {
-            position: relative;
-        }
-        .fake-add-file {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-        .add-file {
-            position: relative;
-            text-align: right;
-            -moz-opacity:0 ;
-            filter:alpha(opacity: 0);
-            opacity: 0;
-            z-index: 2;
-        }
-    </style>
 </head>
 <body>
 <div class="block">
@@ -104,7 +85,7 @@
         <div class="add-file-block">
             <input type="file" class="add-file" />
             <div class="fake-add-file">
-                <input value="Прикрепить файл"/>
+                <input placeholder="Прикрепить файл" type="text" id="file"/>
             </div>
         </div>
     </div>
