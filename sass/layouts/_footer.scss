@@ -1,0 +1,62 @@
+.footer {
+  min-height: 80px;
+  background-color: $color-footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  color: $color-text_light;
+  text-transform: uppercase;
+}
+.law {
+  margin-right: 40px;
+  text-transform: none;
+}
+
+
+
+
+//payment
+.footer__payment-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 474px;
+  border-right: 1px solid $color-payment-text;
+  border-left: 1px solid $color-payment-text;
+}
+
+.footer__payment-list-item {
+  display: flex;
+  justify-content: center;
+  @extend %font-prim;
+  @include font (1.3rem, 1.6rem, 400);
+  color: $color-payment-text;
+}
+.footer__payment-list-item-logo{
+  margin: 0 10px 0 0;
+}
+
+//contacts
+.footer__contacts-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+  min-width: 305px;
+}
+.footer__contacts-list-link {
+  text-decoration: none;
+  color: $color-contact-text;
+  @extend %font-prim;
+  @include font (1.3rem, 1.6rem, 400);
+  display: flex;
+  justify-content: center;
+}
+.footer__contacts-list-item-logo{
+  margin: 0 13px 0 0;
+}

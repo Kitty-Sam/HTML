@@ -1,0 +1,42 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+  background: $color-header;
+}
+
+.logo__name {
+  @extend %font-header;
+  @include font (2.8rem, 3.3rem, 800);
+  color: $color-logo_light;
+  text-transform: uppercase;
+}
+
+.domain {
+  color: $color-logo_dark;
+}
+
+.header__menu-list {
+  @extend %font-prim;
+  @include font (1.3rem, 1.6rem, 600);
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+
+
+.header__menu-list-item {
+  margin: 0 30px;
+}
+
+a.header__menu-list-link {
+  text-decoration: none;
+  color: $color-header-link,
+}
+
+a.header__menu-list-link:active {
+  text-decoration: none;
+  color: $color-header-link_active,
+}
+

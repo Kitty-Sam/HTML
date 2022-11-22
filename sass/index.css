@@ -401,8 +401,12 @@ ul {
   box-sizing: border-box;
 }
 
-body {
+.footer__contacts-list-link, .footer__payment-list-item, .header__menu-list, body {
   font-family: "Lato", Verdana, sans-serif;
+}
+
+.logo__name {
+  font-family: "Raleway", Verdana, sans-serif;
 }
 
 * {
@@ -414,7 +418,7 @@ html {
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #3D4050;
 }
 
 h1 {
@@ -424,12 +428,133 @@ h1 {
   line-height: 5.8rem;
   color: #000000;
 }
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
   color: #000000;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+  background: #10101d;
+}
+
+.logo__name {
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.3rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.domain {
+  color: #42A9ED;
+}
+
+.header__menu-list {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+
+.header__menu-list-item {
+  margin: 0 30px;
+}
+
+a.header__menu-list-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a.header__menu-list-link:active {
+  text-decoration: none;
+  color: #43ABF0;
+}
+
+.footer {
+  min-height: 80px;
+  background-color: #3D4050;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.law {
+  margin-right: 40px;
+  text-transform: none;
+}
+
+.footer__payment-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 474px;
+  border-right: 1px solid #C3C3C3;
+  border-left: 1px solid #C3C3C3;
+}
+
+.footer__payment-list-item {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #C3C3C3;
+}
+
+.footer__payment-list-item-logo {
+  margin: 0 10px 0 0;
+}
+
+.footer__contacts-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+  min-width: 305px;
+}
+
+.footer__contacts-list-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__contacts-list-item-logo {
+  margin: 0 13px 0 0;
 }
 
 /*# sourceMappingURL=index.css.map */
