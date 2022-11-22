@@ -4,11 +4,37 @@
 
 html {
   font-size: 10px;
+
+}
+
+header {
+  width: 100%;
+  background-color: $color-header;
+  opacity: 0.8;
+  position: sticky;
+  //border: 2px solid red;
+}
+main {
+  width: 100%;
+  background-image: url("/assets/fon.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  //background-color: $color-header;
+
+}
+
+footer {
+  width: 100%;
+  background-color: $color-footer;
 }
 
 body {
+  position: relative;
   @extend %font-prim;
-  background-color: $color-footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {

@@ -28,8 +28,9 @@
     </style>
 </head>
 <body>
-<section class="top">
-    <header class="header__wrapper">
+<div class="block">
+    <header>
+        <div  class="header__wrapper">
         <div class="logo">
             <span class="logo__name">LoremIpsum.</span><span class="logo__name domain">Net</span>
         </div>
@@ -42,45 +43,48 @@
                 </li>
             </ul>
         </nav>
+        </div>
     </header>
-    <div class="main">
-        <h1 class="main__header">Lorem ipsum dolor sit amet consectetur adipiscing</h1>
+    <section class="main">
+        <h1 class="main__header"><span>Lorem ipsum</span> dolor sit ametconsectetur<span> adipiscing</span></h1>
         <p class="main__content">
             At vero eos et accusamus et iusto odio dignissimos ducimus!
         </p>
-            <ul>
-        <li><p>Totam rem aperiam eaque ipsa</p></li>
-        <li><p>Sit voluptatem accusantium doloremque laudantium</p></li>
-        <li><p>Sed ut perspiciatis, unde omnis iste natus error</p></li>
-           </ul>
+        <ul class="main__content-list">
+        <li class="main__content-list-item">- Totam rem aperiam eaque ipsa</li>
+        <li class="main__content-list-item">- Sit voluptatem accusantium doloremque laudantium</li>
+        <li class="main__content-list-item">- Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+        <div class="buttons-wrapper">
         <button class="button colored">заказать</button>
         <button class="button">подробнее</button>
-    </div>
-</section>
+        </div>
+    </section>
+</div>
 
+<main>
 <section class="order">
-    <main>
-    <span class="order__header">Оформление заказа</span>
+    <span class="order__header">Оформление <span>заказа</span></span>
     <span class="order__additional-info">Перед заполнением формы ознакомьтесь с нашей схемой работы!</span>
     <div class="order__stage-list">
         <div class="order__stage-list-item">
-            <div class="order__stage-list-item-background"></div>
+            <div class="order__stage-list-item-background"><img src="assets/search.png" alt="search"/></div>
             <p class="order__stage-list-item-title">Lorem ipsum dolor sit amet</p>
         </div>
         <div class="order__stage-list-item">
-            <div class="order__stage-list-item-background"></div>
+            <div class="order__stage-list-item-background"><img src="assets/percent.png" alt="percent"/></div>
             <p class="order__stage-list-item-title">Сonsecteturadipiscing elit</p>
         </div>
         <div class="order__stage-list-item">
-            <div class="order__stage-list-item-background"></div>
+            <div class="order__stage-list-item-background"><img src="assets/add_file.png" alt="add_file"/></div>
             <p class="order__stage-list-item-title">Sed do eiusmod tempor</p>
         </div>
         <div class="order__stage-list-item">
-            <div class="order__stage-list-item-background"></div>
+            <div class="order__stage-list-item-background"><img src="assets/order_letter.png" alt="order"/></div>
             <p class="order__stage-list-item-title">Esse cillum dolore eu fugiat</p>
         </div>
         <div class="order__stage-list-item">
-            <div class="order__stage-list-item-background"></div>
+            <div class="order__stage-list-item-background"><img src="assets/money.png" alt="money"/></div>
             <p class="order__stage-list-item-title">Excepteur sint occaecat cupidatat non proident</p>
         </div>
     </div>
@@ -103,13 +107,13 @@
                 <input value="Прикрепить файл"/>
             </div>
         </div>
-
-        <button type="submit" class="button colored big">Отправить</button>
-
     </div>
-    </main>
+    <button type="submit" class="button colored big">Отправить</button>
 </section>
-<footer class="footer">
+</main>
+
+<footer>
+    <div class="footer__wrapper">
     <p class="info">© 2018 «LoremIpsum.net»</p>
     <p class="info law">Все права защищены.</p>
     <ul class="footer__payment-list">
@@ -123,6 +127,7 @@
         <li class="footer__contacts-list-item"><a class="footer__contacts-list-link" href="" title="vk"><img src="assets/vk.png" class='footer__contacts-list-item-logo' alt="vk"/>
             Мы вконтакте</a></li>
     </ul>
+    </div>
 </footer>
 </body>
 </html>

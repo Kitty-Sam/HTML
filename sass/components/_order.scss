@@ -1,0 +1,62 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order__header {
+  @extend %font-prim;
+  @include font(3.6rem, 4.3rem, 800);
+  color: $color-text_light;
+  margin: 125px 0 30px 0;
+}
+.order__header span {
+  color: $color-title-text;
+}
+
+.order__additional-info {
+  @extend %font-prim;
+  @include font(1.8rem, 2.2rem, 400);
+  color: $color-inform-text;
+  margin-bottom: 80px;
+}
+
+.order__stage-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 1056px;
+  margin-bottom: 65px;
+}
+
+.order__stage-list-item-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $color-order-stage_background;
+  border: 5px solid $color-order-stage_border;
+}
+
+.order__stage-list-item-title {
+  @extend %font-prim;
+  @include font(1.6rem, 1.9rem, 400);
+  color: $color-text_light;
+}
+.order__stage-list-item {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+.order__input_data_list {
+  height: 150px;
+  border: 2px solid red;
+  margin-bottom: 56px;
+}

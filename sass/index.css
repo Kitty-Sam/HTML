@@ -401,12 +401,12 @@ ul {
   box-sizing: border-box;
 }
 
-.footer__contacts-list-link, .footer__payment-list-item, .header__menu-list, .button, body {
-  font-family: "Lato", Verdana, sans-serif;
+.order__stage-list-item-title, .order__additional-info, .order__header, .main__content-list-item, .main__content, .main__header, .footer__contacts-list-link, .footer__payment-list-item, .header__menu-list, .button, body {
+  font-family: Lato, Verdana, sans-serif;
 }
 
 .logo__name {
-  font-family: "Raleway", Verdana, sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
 }
 
 * {
@@ -417,8 +417,31 @@ html {
   font-size: 10px;
 }
 
-body {
+header {
+  width: 100%;
+  background-color: #10101d;
+  opacity: 0.8;
+  position: sticky;
+}
+
+main {
+  width: 100%;
+  background-image: url("/assets/fon.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+footer {
+  width: 100%;
   background-color: #3D4050;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -453,9 +476,10 @@ h2 {
   border: 2px solid #6F6D7B;
   padding: 15px 42px;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
+  box-sizing: border-box;
 }
 
 .colored {
@@ -465,14 +489,17 @@ h2 {
 
 .big {
   padding: 18px 135px;
+  margin-bottom: 150px;
+  margin-left: 0;
 }
 
 .header__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  min-height: 100px;
-  background: #10101d;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 33px 0;
 }
 
 .logo__name {
@@ -512,9 +539,10 @@ a.header__menu-list-link:active {
   color: #43ABF0;
 }
 
-.footer {
-  min-height: 80px;
-  background-color: #3D4050;
+.footer__wrapper {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 30px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -577,6 +605,137 @@ a.header__menu-list-link:active {
 
 .footer__contacts-list-item-logo {
   margin: 0 13px 0 0;
+}
+
+.block {
+  width: 100%;
+  background-image: url("/assets/foto_background.jpeg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.main {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.order {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.main__header {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.8rem;
+  margin-top: 103px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.main__header span {
+  color: #3E9CDC;
+}
+
+.main__content {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.main__content-list {
+  margin-bottom: 80px;
+}
+
+.main__content-list-item {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #000000;
+}
+
+button:last-child {
+  margin-left: 30px;
+}
+
+.buttons-wrapper {
+  margin-bottom: 150px;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order__header {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 4.3rem;
+  color: #FFFFFF;
+  margin: 125px 0 30px 0;
+}
+
+.order__header span {
+  color: #3E9CDC;
+}
+
+.order__additional-info {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #BBBBBB;
+  margin-bottom: 80px;
+}
+
+.order__stage-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 1056px;
+  margin-bottom: 65px;
+}
+
+.order__stage-list-item-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3E9CDC;
+  border: 5px solid #286690;
+}
+
+.order__stage-list-item-title {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: #FFFFFF;
+}
+
+.order__stage-list-item {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+.order__input_data_list {
+  height: 150px;
+  border: 2px solid red;
+  margin-bottom: 56px;
 }
 
 /*# sourceMappingURL=index.css.map */

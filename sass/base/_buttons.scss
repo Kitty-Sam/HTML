@@ -1,12 +1,13 @@
 .button {
   @extend %font-prim;
-  @include font($size: 1.3rem, $height: 1.6rem);
+  @include font(1.3rem, 1.6rem);
   border: 2px solid $color-button_border;
   padding: 15px 42px;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: $color-text_dark;
   background-color: $color-button_background;
+  box-sizing: border-box;
 }
 .colored {
   background-color: $color-button_active_background;
@@ -15,4 +16,6 @@
 
 .big {
   padding: 18px 135px;
+  margin-bottom: 150px ;
+  margin-left: 0;
 }

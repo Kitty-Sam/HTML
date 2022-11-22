@@ -1,9 +1,10 @@
 .header__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  min-height: 100px;
-  background: $color-header;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 33px 0;
 }
 
 .logo__name {
