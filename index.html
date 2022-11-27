@@ -45,12 +45,12 @@
 
 <main>
 <section class="order">
-    <span class="order__header">Оформление <span>заказа</span></span>
-    <span class="order__additional-info">Перед заполнением формы ознакомьтесь с нашей схемой работы!</span>
+    <h2 class="order__header">Оформление <span>заказа</span></h2>
+    <p class="order__additional-info">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
     <div class="order__stage-list">
         <div class="order__stage-list-item">
             <div class="order__stage-list-item-background"><img src="assets/search.png" alt="search"/></div>
-            <p class="order__stage-list-item-title">Lorem ipsum dolor sit amet</p>
+            <p class="order__stage-list-item-title">Lorem ipsum dolorsit amet</p>
         </div>
         <div class="order__stage-list-item">
             <div class="order__stage-list-item-background"><img src="assets/percent.png" alt="percent"/></div>
@@ -72,6 +72,7 @@
 
     <div class="order__input_data_list">
         <select class="select-list">
+            <option class="select-list-item">Выберите тип системы</option>
             <option class="select-list-item">Sed ut perspiciatis</option>
             <option class="select-list-item">emo enim ipsam</option>
             <option class="select-list-item">Et harum quidem</option>
@@ -80,7 +81,11 @@
         </select>
         <input type="email" placeholder="Ваш e-mail" name="email" class="email"/>
         <input type="text" placeholder="Ваше имя" name="name" class="name"/>
-        <input type="range"/>
+        <div class="order__input_data_slidecontainer">
+            <p>Sed ut perspiciatis, unde omnis iste natus</p>
+            <p id="ValueRange"></p>
+            <input type="range" min="1" max="100" value="75" class="slider" id="Range">
+        </div>
 
         <div class="add-file-block">
             <input type="file" class="add-file" />
@@ -99,7 +104,7 @@
     <p class="info law">Все права защищены.</p>
     <ul class="footer__payment-list">
         <li class="footer__payment-list-item"><img src="assets/kiwi_logo.png" class="footer__payment-list-item-logo" alt="qiwi"/>QIWI wallet</li>
-        <li class="footer__payment-list-item"><img src="assets/kiwi_logo.png" class="footer__payment-list-item-logo" alt="yandex"/>Yandex Money</li>
+        <li class="footer__payment-list-item"><img src="assets/wallet.svg" class="footer__payment-list-item-logo" alt="yandex"/>Yandex Money</li>
         <li class="footer__payment-list-item"><img src="assets/web_logo.png" class="footer__payment-list-item-logo" alt="web"/>Web Money</li>
     </ul>
     <ul class="footer__contacts-list">
@@ -110,5 +115,6 @@
     </ul>
     </div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>

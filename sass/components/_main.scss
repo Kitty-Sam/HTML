@@ -14,18 +14,20 @@
 }
 
 .main__header {
-  @extend %font-prim;
+  @extend %font-heavy;
   @include font(4.8rem, 5.8rem, 700);
   margin-top: 103px;
   text-transform: uppercase;
   margin-bottom: 80px;
+  width: 780px;
+
 }
 .main__header span {
   color: $color-title-text;
 }
 
 .main__content {
-  @extend %font-prim;
+  @extend %font-heavy;
   @include font(2.0rem, 2.4rem, 700);
   color: $color-text_dark;
   margin-bottom: 10px;
@@ -36,7 +38,7 @@
 }
 
 .main__content-list-item {
-  @extend %font-prim;
+  @extend %font-regular;
   @include font(2.0rem, 2.4rem);
   color: $color-text_dark;
 }
@@ -44,6 +46,6 @@ button:last-child {
   margin-left: 30px;
 }
 .buttons-wrapper{
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 

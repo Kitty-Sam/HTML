@@ -1,45 +1,51 @@
+
 input::placeholder {
   color: $color-input;
 }
 .select-list {
   width: 370px;
+  padding: 0 10px;
+  height: 48px;
   background-color: $color-input_border;
   opacity: 0.85;
   border-radius: 3px;
   border: 1px solid $color-input_border;
-  @extend %font-prim;
+  @extend %font-regular;
   @include font(1.8rem, 2.2rem);
-  padding: 12px 36px 12px 10px ;
+
 }
 
 input[type='email'] {
   width: 370px;
+  height: 48px;
+  padding-left: 10px;
   background-color: $color-input_border;
   opacity: 0.85;
   border-radius: 3px;
   border: 1px solid $color-input_border;
-  @extend %font-prim;
+  @extend %font-regular;
   @include font(1.8rem, 2.2rem);
-  padding: 12px 36px 12px 10px ;
 }
 
 input[type='text'] {
   width: 370px;
+  height: 48px;
+  padding-left: 10px;
   background-color: $color-input_border;
   opacity: 0.85;
   border-radius: 3px;
   border: 1px solid $color-input_border;
-  @extend %font-prim;
+  @extend %font-regular;
   @include font(1.8rem, 2.2rem);
-  padding: 12px 36px 12px 10px ;
 }
 
 input[type='file'] {
   width: 370px;
+  height: 48px;
   background-color: $color-input_border;
   border-radius: 3px;
   border: 1px solid $color-input_border;
-  @extend %font-prim;
+  @extend %font-regular;
   @include font(1.8rem, 2.2rem);
   position: relative;
   text-align: right;
@@ -49,7 +55,8 @@ input[type='file'] {
 }
 
 #file {
-  background-image: url("assets/file.png");
+  background-image: url("../assets/file.svg");
+  background-position: 25% 55%;
   background-repeat: no-repeat;
   text-align: center;
 }

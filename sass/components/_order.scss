@@ -1,32 +1,38 @@
 .order {
+  max-width: 1172px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .order__header {
-  @extend %font-prim;
+  @extend %font-heavy;
   @include font(3.6rem, 4.3rem, 800);
   color: $color-text_light;
-  margin: 125px 0 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px ;
+
 }
 .order__header span {
   color: $color-title-text;
 }
 
 .order__additional-info {
-  @extend %font-prim;
+  @extend %font-regular;
   @include font(1.8rem, 2.2rem, 400);
   color: $color-inform-text;
+  text-align: center;
   margin-bottom: 80px;
+
 }
 
 .order__stage-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 1056px;
+  width: 100%;
   margin-bottom: 65px;
 }
 
@@ -42,17 +48,17 @@
 }
 
 .order__stage-list-item-title {
-  @extend %font-prim;
+  @extend %font-regular;
   @include font(1.6rem, 1.9rem, 400);
   color: $color-text_light;
 }
 .order__stage-list-item {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
-  width: 200px;
+  width: 209px;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .order__input_data_list {
@@ -60,6 +66,60 @@
   justify-content: space-between;
   flex-wrap: wrap;
   height: 150px;
-  border: 2px solid red;
   margin-bottom: 56px;
 }
+
+.order__stage-list-item:not(:last-child)::after {
+  content: url(../assets/points.svg);
+  position: absolute;
+  top: 40px;
+  left: 167px;
+}
+
+.order__input_data_slidecontainer {
+  width: 770px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid $color-text_light;
+  border-radius: 3px;
+  outline: none;
+
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: $color-logo_dark;
+  border: 3px solid $color-order-stage_border;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: $color-logo_dark;
+  border: 3px solid $color-order-stage_border;
+  cursor: pointer;
+}
+
+.order__input_data_slidecontainer p {
+  @extend %font-regular;
+  @include font(1.8rem, 2.2rem, 400);
+  color: $color-text_light;
+}
+#ValueRange{
+  position: absolute;
+  right: 455px;
+  bottom: 400px;
+}
+

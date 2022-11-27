@@ -1,5 +1,5 @@
 .button {
-  @extend %font-prim;
+  @extend %font-regular;
   @include font(1.3rem, 1.6rem);
   border: 2px solid $color-button_border;
   padding: 15px 42px;
@@ -17,5 +17,4 @@
 .big {
   padding: 18px 135px;
   margin-bottom: 150px ;
-  margin-left: 0;
 }
