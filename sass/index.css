@@ -401,7 +401,7 @@ ul {
   box-sizing: border-box;
 }
 
-.order__input_data_slidecontainer p, .order__stage-list-item-title, .order__additional-info, .main__content-list-item, .footer__contacts-list-link, .footer__payment-list-item, input[type=file], input[type=text], input[type=email], .select-list, .button, body {
+.order__input_data_slidecontainer p, .order__stage-list-item-title, .order__additional-info, .main__content-list-item, .footer__contacts-list-link, .footer__payment-list-item, .select-list, input, .button, body {
   font-family: Lato-Regular, Verdana, sans-serif;
 }
 
@@ -423,6 +423,8 @@ header {
   background-color: #10101d;
   opacity: 0.8;
   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 main {
@@ -495,6 +497,20 @@ input::placeholder {
   color: #272733;
 }
 
+input {
+  width: 370px;
+  padding: 0 10px;
+  height: 48px;
+  background-color: #FFFFFF;
+  opacity: 0.85;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
 .select-list {
   width: 370px;
   padding: 0 10px;
@@ -509,44 +525,7 @@ input::placeholder {
   line-height: 2.2rem;
 }
 
-input[type=email] {
-  width: 370px;
-  height: 48px;
-  padding-left: 10px;
-  background-color: #FFFFFF;
-  opacity: 0.85;
-  border-radius: 3px;
-  border: 1px solid #FFFFFF;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.2rem;
-}
-
-input[type=text] {
-  width: 370px;
-  height: 48px;
-  padding-left: 10px;
-  background-color: #FFFFFF;
-  opacity: 0.85;
-  border-radius: 3px;
-  border: 1px solid #FFFFFF;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.2rem;
-}
-
 input[type=file] {
-  width: 370px;
-  height: 48px;
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  border: 1px solid #FFFFFF;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.2rem;
   position: relative;
   text-align: right;
   -moz-opacity: 0;
@@ -574,11 +553,11 @@ input[type=file] {
 
 @font-face {
   font-family: "Lato-Heavy";
-  src: url("/fonts/Lato-Heavy.woff");
+  src: url("../fonts/Lato-Heavy.woff") format("woff");
 }
 @font-face {
   font-family: "Lato-Regular";
-  src: url("/fonts/Lato-Regular.woff");
+  src: url("../fonts/Lato-Regular.woff") format("woff");
 }
 .header__wrapper {
   display: flex;
@@ -884,7 +863,7 @@ button:last-child {
 
 #ValueRange {
   position: absolute;
-  right: 455px;
+  right: 760px;
   bottom: 400px;
 }
 
