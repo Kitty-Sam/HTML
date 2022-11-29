@@ -429,7 +429,7 @@ header {
 
 main {
   width: 100%;
-  background-image: url("/assets/fon.png");
+  background-image: url("/assets/fon.PNG");
   background-repeat: no-repeat;
   background-size: auto;
   padding-top: 121px;
@@ -856,7 +856,7 @@ a.header__menu-list-link:active {
 
 .block {
   width: 100%;
-  background-image: url("/assets/foto_background.jpeg");
+  background-image: url("/assets/foto_background.JPEG");
   background-repeat: no-repeat;
   background-size: auto;
 }
