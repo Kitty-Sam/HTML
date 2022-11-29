@@ -11,6 +11,9 @@ input {
   border: 1px solid $color-input_border;
   @extend %font-regular;
   @include font(1.8rem, 2.2rem);
+  @media screen and (max-width: $mobile-big-width) {
+    width: 80%;
+  }
 }
 
 .select-list {
@@ -23,7 +26,9 @@ input {
   border: 1px solid $color-input_border;
   @extend %font-regular;
   @include font(1.8rem, 2.2rem);
-
+  @media screen and (max-width: $mobile-big-width) {
+    width: 80%;
+  }
 }
 
 input[type='email'] {
@@ -45,9 +50,17 @@ input[type='file'] {
   background-position: 25% 55%;
   background-repeat: no-repeat;
   text-align: center;
+  @media screen and (max-width: $mobile-big-width) {
+    background-image: none;
+    background-position: unset;
+  }
 }
 .add-file-block {
   position: relative;
+  @media screen and (max-width: $mobile-big-width) {
+    right: 255px;
+    top: 50px
+  }
 }
 .fake-add-file {
   position: absolute;

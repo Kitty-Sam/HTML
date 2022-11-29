@@ -21,6 +21,10 @@ main {
   background-repeat: no-repeat;
   background-size: auto;
   padding-top: 121px;
+  @media screen and (max-width: $mobile-big-width) {
+    background-image: none;
+    background-color: $color-input;
+  }
 }
 
 footer {

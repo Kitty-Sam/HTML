@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test | HTML</title>
     <link rel="stylesheet" href="sass/index.css">
 </head>
@@ -15,7 +14,12 @@
         <div class="logo">
             <span class="logo__name">LoremIpsum.</span><span class="logo__name domain">Net</span>
         </div>
-        <nav class="header__menu">
+            <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+<!--        <nav class="header__menu">-->
             <ul class="header__menu-list">
                 <li class="header__menu-list-item"><a class="header__menu-list-link" href="" title="Бизнес">Бизнес</a></li>
                 <li class="header__menu-list-item"><a class="header__menu-list-link" href="" title="О нас">О нас</a> </li>
@@ -23,7 +27,8 @@
                 <li class="header__menu-list-item"><a class="header__menu-list-link" href="" title="Оформить заказ">Оформить заказ</a>
                 </li>
             </ul>
-        </nav>
+<!--        </nav>-->
+        </div>
         </div>
     </header>
     <section class="main">

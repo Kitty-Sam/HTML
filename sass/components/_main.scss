@@ -3,10 +3,20 @@
   background-image: url("/assets/foto_background.jpeg");
   background-repeat: no-repeat;
   background-size: auto;
+  @media screen and (max-width: $mobile-big-width) {
+    background-color: silver;
+    background-image: none;
+  }
 }
 .main {
   max-width: 1210px;
   margin: 0 auto;
+  @media screen and (max-width: $mobile-big-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .order {
   max-width: 1210px;
@@ -20,6 +30,10 @@
   text-transform: uppercase;
   margin-bottom: 80px;
   width: 780px;
+  @media screen and (max-width: $mobile-big-width) {
+    width: 80%;
+    @include font(1.6rem, 2.0rem);
+  }
 
 }
 .main__header span {
@@ -31,21 +45,44 @@
   @include font(2.0rem, 2.4rem, 700);
   color: $color-text_dark;
   margin-bottom: 10px;
+  @media screen and (max-width: $mobile-big-width) {
+    width: 80%;
+    @include font(1.6rem, 1.5rem);
+    display: flex;
+  }
+
 }
 
 .main__content-list {
   margin-bottom: 80px;
+  @media screen and (max-width: $mobile-big-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .main__content-list-item {
   @extend %font-regular;
   @include font(2.0rem, 2.4rem);
   color: $color-text_dark;
+  @media screen and (max-width: $mobile-big-width) {
+    width: 80%;
+    @include font(1.6rem, 2.0rem);
+  }
 }
 button:last-child {
   margin-left: 30px;
 }
 .buttons-wrapper{
   padding-bottom: 150px;
+  @media screen and (max-width: $mobile-big-width) {
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 

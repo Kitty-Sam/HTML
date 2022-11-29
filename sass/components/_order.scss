@@ -12,9 +12,12 @@
   color: $color-text_light;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px ;
-
+  margin-bottom: 30px;
+  @media screen and (max-width: $mobile-big-width) {
+    @include font(2.6rem, 2.0rem);
+  }
 }
+
 .order__header span {
   color: $color-title-text;
 }
@@ -34,6 +37,10 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 65px;
+  @media screen and (max-width: $mobile-big-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .order__stage-list-item-background {
@@ -45,6 +52,10 @@
   border-radius: 50%;
   background-color: $color-order-stage_background;
   border: 5px solid $color-order-stage_border;
+  @media screen and (max-width: $mobile-big-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .order__stage-list-item-title {
@@ -59,6 +70,9 @@
   align-items: center;
   text-align: center;
   position: relative;
+  @media screen and (max-width: $mobile-big-width) {
+    margin: 10px;
+  }
 }
 
 .order__input_data_list {
@@ -67,17 +81,30 @@
   flex-wrap: wrap;
   height: 150px;
   margin-bottom: 56px;
-}
+    @media screen and (max-width: $mobile-big-width) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
 
 .order__stage-list-item:not(:last-child)::after {
   content: url(../assets/points.svg);
   position: absolute;
   top: 40px;
   left: 167px;
+  @media screen and (max-width: $mobile-big-width) {
+    content: none;
+  }
 }
 
 .order__input_data_slidecontainer {
   width: 770px;
+  position: relative;
+  @media screen and (max-width: $mobile-big-width) {
+    width: 25%;
+    margin-top: 100px;
+  }
 }
 
 .slider {
@@ -89,7 +116,9 @@
   border: 1px solid $color-text_light;
   border-radius: 3px;
   outline: none;
-
+  @media screen and (max-width: $mobile-big-width) {
+    display: none;
+  }
 }
 
 .slider::-webkit-slider-thumb {
@@ -116,10 +145,17 @@
   @extend %font-regular;
   @include font(1.8rem, 2.2rem, 400);
   color: $color-text_light;
+  @media screen and (max-width: $mobile-big-width) {
+    display: none;
+  }
+
 }
 #ValueRange{
   position: absolute;
-  right: 760px;
-  bottom: 400px;
+  right: 25px;
+  bottom: 62px;
+  @media screen and (max-width: $mobile-big-width) {
+    display: none;
+  }
 }
 

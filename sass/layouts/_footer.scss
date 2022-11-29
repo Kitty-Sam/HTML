@@ -6,15 +6,22 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: $mobile-big-width) {
+    flex-direction: column;
+  }
 }
 
 .info {
   color: $color-text_light;
   text-transform: uppercase;
 }
+
 .law {
   margin-right: 40px;
   text-transform: none;
+  @media screen and (max-width: $mobile-big-width) {
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -27,6 +34,11 @@
   min-width: 474px;
   border-right: 1px solid $color-payment-text;
   border-left: 1px solid $color-payment-text;
+  @media screen and (max-width: $mobile-big-width) {
+    min-width: $mobile-big-width ;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .footer__payment-list-item {
@@ -48,6 +60,11 @@
   align-items: center;
   margin: 0 40px;
   min-width: 305px;
+  @media screen and (max-width: $mobile-big-width) {
+    min-width: $mobile-big-width ;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 .footer__contacts-list-link {
   text-decoration: none;
@@ -56,6 +73,7 @@
   @include font (1.3rem, 1.6rem, 400);
   display: flex;
   justify-content: center;
+
 }
 .footer__contacts-list-item-logo{
   margin: 0 13px 0 0;
